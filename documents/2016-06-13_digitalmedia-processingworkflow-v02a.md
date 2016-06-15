@@ -51,7 +51,7 @@ ______
 	- Floppy drive: use on-disk write blocker tag.
 	- USB stick: no hardware write blocker required (see Kessler & Carlton, [2014](http://ojs.jdfsl.org/index.php/jdfsl/article/view/249)).
 	- Other media: case-by-case basis.
-- Open `Forensics Tools / BitCurator Mounter` to ensure media is mounted correctly. In the event that 'BitCurator Mounter' does not open, try mounting the source media by clicking on it in a finder window.
+- Open `Forensics Tools / BitCurator Mounter` to ensure media is mounted correctly. In the event that 'BitCurator Mounter' does not open, try mounting the source media by clicking on it in a finder window. (NB: this step is not required for CDs or DVDs)
 - Create forensic disk image in E01 format using Guymager and store in appropriate folder in file system:
 	- Open `Imaging Tools / Guymager`.
 	- Select media, right-click, select ‘Acquire Image’.
