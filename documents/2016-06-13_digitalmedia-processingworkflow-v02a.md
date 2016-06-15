@@ -71,7 +71,7 @@ ______
 		- Calculate SHA-256: yes.
 		- Re-read source after acquisition: no.
 		- Verify image after acquisition: yes.
-- When process is complete (Guymager should report ‘Finished – Verified & Ok’ in the ‘State’ column), make a copy of capture and metadata in a backup folder.
+- When process is complete (Guymager should report ‘Finished – Verified & Ok’ in the ‘State’ column), eject the media, and make a copy of capture and metadata in a backup folder.
 
 ______
 ## Reporting
