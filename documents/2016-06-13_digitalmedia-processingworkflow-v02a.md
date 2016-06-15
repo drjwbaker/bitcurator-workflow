@@ -76,11 +76,28 @@ ______
 ______
 ## Reporting
 
+### Simple
+
 - To create a directory and file listing for your disk image, open `Forensic Tools / BitCurator Reporting Tool`
 - Select Fiwalk XML tab and enter:
 	- Image File: location of captured image (‘filename [case number][evidence number].E01’) on external drive
 	- Output XML File: location of captured image on external drive with filename ‘[case number][evidence number].xml’
 - Hit Run. When output reads ‘Success!!!’ check .xml output
+
+### Detailed
+
+- To create a series of reports on your disk image (deleted files, counts of file types, semantic features, et cetera), open `Forensic Tools / BitCurator Reporting Tool`
+- Select 'Launch BEViewer'.
+- In the 'Bulk Extractor Viewer', select the 'Tools' tab and the 'Run bulk extractor' option.
+	- Image file: location of captured image (‘filename [case number][evidence number].E01’) on external drive
+	- Output Feature Directory: recommend a new folder within the location of captured image on external drive named after the captured image
+	- Select the 'Scanners' you want to use on the right-hand side (for more info in Scanners see the [BitCurator Wiki](http://wiki.bitcurator.net/index.php?title=Bulk_Extractor_Scanners))
+	- When you are ready, click 'Submit Run'
+- When this is complete, return to the 'BitCurator Reporting Tool' and enter:
+	- Image File: location of captured image (‘filename [case number][evidence number].E01’) on external drive
+	- Bulk Extractor Feature Directory: the new folder within the location of captured image on external drive where you saved the Bulk Extractor Features
+	- Output Directory: recommend the same folder as the Bulk Extractor Features.
+	- When you are ready, click 'Run'
 
 ______
 ## Image Access
