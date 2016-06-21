@@ -29,7 +29,7 @@ ______
 
 - Investigate private shared network for deposit of outputs.
 - Investigate acquisition of further forensic hardware and software tools: 
-	- For source media processing: AccessData FTK Imager; KryoFlux.
+	- For source media processing: AccessData FTK Imager; KryoFlux (for floppy drives); PowerISO (for CDs/DVDs)
 	- For curatorial arrangement and description: Quick View Plus.
 - Repeat process for complex source media (including Mac and legacy Linux OS filesystems).
 - Integrate virus and malware check steps.
