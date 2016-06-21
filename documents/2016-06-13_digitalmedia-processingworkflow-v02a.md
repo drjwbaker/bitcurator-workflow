@@ -70,7 +70,7 @@ ______
 		- Calculate SHA-1: yes.
 		- Calculate SHA-256: yes.
 		- Re-read source after acquisition: no.
-		- Verify image after acquisition: yes.
+		- Verify image after acquisition: yes. (NB: if you find the 'Time Remaining Field' growing exponentially during capture, try aborting and re-running with this option deselected)
 - When process is complete (Guymager should report ‘Finished – Verified & Ok’ in the ‘State’ column), eject the source media, and make a copy of capture and metadata in a backup folder.
 
 ______
