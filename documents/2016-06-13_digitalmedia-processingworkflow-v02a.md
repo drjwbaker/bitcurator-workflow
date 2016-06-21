@@ -2,8 +2,6 @@
 
 ## James Baker
 
-### v0.2a (13 June 2016)
-
 ______
 ## Scope
 
