@@ -52,41 +52,35 @@ ______
 
 ### Simple
 
-- To create a directory and file listing for your disk image, open `Forensic Tools / BitCurator Reporting Tool`
+- To create a directory and file listing for your disk image, open `Forensics and Reporting` and `BitCurator Reporting Tool`
 - Select Fiwalk XML tab and enter:
-	- Image File: location of captured image (‘filename [case number][evidence number].E01’) on external drive
-	- Output XML File: location of captured image on external drive with filename ‘[case number][evidence number].xml’
+	- Image File: location of captured image (‘filename [case number][evidence number].E01’) on the share.
+	- Output XML File: location of captured image on the share with filename ‘[case number][evidence number].xml’
 - Hit Run. When output reads ‘Success!!!’ check .xml output
 
 ### Detailed
 
-- To create a series of reports on your disk image (deleted files, counts of file types, semantic features, et cetera), open `Forensic Tools / BitCurator Reporting Tool`
-- Select 'Launch BEViewer'.
-- In the 'Bulk Extractor Viewer', select the 'Tools' tab and the 'Run bulk extractor' option.
-	- Image file: location of captured image (‘filename [case number][evidence number].E01’) on external drive
-	- Output Feature Directory: recommend a new folder within the location of captured image on external drive named after the captured image
+- To create a series of reports on your disk image (deleted files, counts of file types, semantic features, et cetera), open `Forensics and Reporting`.
+- Select 'Bulk Extractor Viewer'.
+- Select the 'Tools' tab and the 'Run bulk extractor' option.
+	- Image file: location of captured image (‘filename [case number][evidence number].E01’) on the share (in the 'media' folder)
+	- Output Feature Directory: recommend a new folder within the location of captured image on the share named after the captured image
 	- Select the 'Scanners' you want to use on the right-hand side (for more info in Scanners see the [BitCurator Wiki](http://wiki.bitcurator.net/index.php?title=Bulk_Extractor_Scanners))
 	- When you are ready, click 'Submit Run'
 - When this is complete, return to the 'BitCurator Reporting Tool' and enter:
-	- Image File: location of captured image (‘filename [case number][evidence number].E01’) on external drive
-	- Bulk Extractor Feature Directory: the new folder within the location of captured image on external drive where you saved the Bulk Extractor Features
+	- Image File: location of captured image (‘filename [case number][evidence number].E01’) on the share.
+	- Bulk Extractor Feature Directory: the new folder within the location of captured image on the share where you saved the Bulk Extractor Features
 	- Output Directory: recommend the same folder as the Bulk Extractor Features.
 	- When you are ready, click 'Run'
 
 ______
 ## Image Access
 
-- To access files on your disk image, open `Forensic Tools / BitCurator Disk Image Access`
+- To access files on your disk image, open `Forensics and Reporting` and `BitCurator Disk Image Access`
 	- Select ‘Open disk image’
 	- Navigate to forensic capture (the .E01 file) and choose open
 	- Browse the disk image and check the box for files you want to export from the image.  When you are done, hit ‘Export selection’ and choose a location to export the files to (such as ‘/media/XXXX/’)
-	- Open files in your normal PC environment for curation and description. Note that specialist software may be required for legacy file formats.
-
-______
-## Post-processing
-
-- Original digital media stored or decommissioned as appropriate. 
-- Optional: Photography of digital media and hardware undertaken if deemed appropriate and stored in appropriate folder alongside forensic capture and metadata (this is useful when the media contains handwritten notes, for example)
+	- Open files in your normal PC environment. Note that specialist software may be required for legacy file formats.
 
 ____
 ### Some admin...
