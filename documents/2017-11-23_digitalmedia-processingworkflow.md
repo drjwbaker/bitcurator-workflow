@@ -22,11 +22,12 @@ ______
 - Once BitCurator boots, you are effectively in a adapted Ubuntu/Linux environment. On the adaptations, note for example you have lots of folders in place with software in, and - the far left icon of the top bar - that right policy is set to read-only.
 - Connect source media. Ensure media to be processed is write-protected when connecting media to workstation. BitCurator sets mount policy to ‘read-only’ by default. For different drive types following connection is advised:
 	- Hard drive: use hardware write blocker. For bare drives, also ensure that drive is placed on a surface on which it will not overheat (for example a metal sheet).
-	- Floppy drive: use on-disk write blocker tag.
+	- Floppy drive: use on-disk write blocker tag (down is not-writable)
 	- USB stick: no hardware write blocker required for pre-2016 flash drives (see Kessler & Carlton, [2014](http://ojs.jdfsl.org/index.php/jdfsl/article/view/249)).
-- Open `Forensics Tools / BitCurator Mounter` to ensure media is mounted correctly. In the event that 'BitCurator Mounter' does not open, try mounting the source media by clicking on it in a finder window. (NB: this step is not required for CDs or DVDs)
+- In the event that 'BitCurator Mounter' does not open, try mounting the source media by clicking on it in a finder window.
+- If you can't find it here, use the 'Devices' and 'USB menu in VirtualBox to connect the device to BitCurator, then repeat the finder window step.
 - Create forensic disk image in E01 format using Guymager and store in appropriate folder in file system:
-	- Open `Imaging Tools / Guymager`.
+	- Open `Imaging and Recovery` then `Guymager`.
 	- Select media, right-click, select ‘Acquire Image’.
 	- In ‘Acquire Image Screen’, enter as follows then hit Start:
 		- File Format: Expert Witness Format.
@@ -36,7 +37,7 @@ ______
 		- Examiner: Sussex ITS username.
 		- Description: [case number]-[evidence number]-[examiner].
 		- Notes: media type (e.g. cdd, fdd, hdd).
-		- Image directory: select location on external flash drive (in the /media folder)
+		- Image directory: select location of the local share (in the /media folder)
 		- Image filename: [case number][evidence number].
 	- Hash calculation / verification:
 		- Calculate MD5: yes.
@@ -44,7 +45,7 @@ ______
 		- Calculate SHA-256: yes.
 		- Re-read source after acquisition: no.
 		- Verify image after acquisition: yes. (NB: if you find the 'Time Remaining Field' growing exponentially during capture, try aborting and re-running with this option deselected)
-- When process is complete (Guymager should report ‘Finished – Verified & Ok’ in the ‘State’ column), eject the source media, and make a copy of capture and metadata in a backup folder.
+- When process is complete (Guymager should report ‘Finished – Verified & Ok’ in the ‘State’ column). Eject the source media. Now go look at what you've made!
 
 ______
 ## Reporting
