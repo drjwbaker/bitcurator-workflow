@@ -17,13 +17,13 @@ ______
 ______
 ## Forensic Capture
 
-- Start BitCurator (see latest at [http://wiki.bitcurator.net/downloads/](http://wiki.bitcurator.net/downloads/) and if virtual machine use [VirtualBox default settings](http://wiki.bitcurator.net/index.php?title=BitCurator_Virtual_Machine_Install)).
-- Connect external flash drive as writeable temporary storage for forensic captures. Either: A) First mount ‘read-only’ using `Forensic Tools / BitCurator Mounter`. Note the path for this disk in the ‘raw device’ column. Then in Terminal do `sudo mount –w /dev/xxxx /media/xxxx` where ‘xxxx’ is the value after / in the previous ‘raw device column’ (eg `sdb1`); or B) Click on the disk icon on the top bar and select 'Set mount policy WRITEABLE'. Click ok and connect external flash drive. Open `Forensic Tools / BitCurator Mounter` and mount drive (the device path will start `/dev/sdb..`. Click on the disk icon on the top bar and select 'Set mount policy READ-ONLY'. It is now safe to connect your source media.
+- Open Virtual Box. Go to 'Machine' then 'Add'. Navigate to 'BitCurator-1.8.12.vbox' and select it.
+- Once selected, right click on the machine, choose 'Settings', 'Shared Folders', then the add icon on the right. Choose a folder path, select 'auto-mount', and click ok, ok, then power up the machine (with the 'Start' button)
+- Once BitCurator boots, you are effectively in a adapted Ubuntu/Linux environment. On the adaptations, note for example you have lots of folders in place with software in, and - the far left icon of the top bar - that right policy is set to read-only.
 - Connect source media. Ensure media to be processed is write-protected when connecting media to workstation. BitCurator sets mount policy to ‘read-only’ by default. For different drive types following connection is advised:
 	- Hard drive: use hardware write blocker. For bare drives, also ensure that drive is placed on a surface on which it will not overheat (for example a metal sheet).
 	- Floppy drive: use on-disk write blocker tag.
-	- USB stick: no hardware write blocker required (see Kessler & Carlton, [2014](http://ojs.jdfsl.org/index.php/jdfsl/article/view/249)).
-	- Other media: case-by-case basis.
+	- USB stick: no hardware write blocker required for pre-2016 flash drives (see Kessler & Carlton, [2014](http://ojs.jdfsl.org/index.php/jdfsl/article/view/249)).
 - Open `Forensics Tools / BitCurator Mounter` to ensure media is mounted correctly. In the event that 'BitCurator Mounter' does not open, try mounting the source media by clicking on it in a finder window. (NB: this step is not required for CDs or DVDs)
 - Create forensic disk image in E01 format using Guymager and store in appropriate folder in file system:
 	- Open `Imaging Tools / Guymager`.
